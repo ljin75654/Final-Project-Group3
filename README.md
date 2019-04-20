@@ -3,7 +3,7 @@
 
 This project addresses an image classification problem, and further application of the image classification explored in class. The IAM Handwriting Dataset chosen for this project is comprised of a collection of handwritten passages by various writers. The goal of this project is to use deep learning to classify the writers by their writing styles. The results of this project can be used in future applications, such as identifying criminals by signature in fraudulent cases. This report will discuss the dataset, network and training algorithm, experiment setup, results, and conclusions drawn from this analysis.
 
-##Requirements 
+## Requirements 
 This program runs on GPU. 
 
 ##Installation
