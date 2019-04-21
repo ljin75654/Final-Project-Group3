@@ -6,9 +6,12 @@ This project addresses an image classification problem, and further application 
 ## Requirements 
 This program runs on GPU. 
 
-##Installation
-###The following packages should be installed before running the code:
+## Installation
+
+### The following packages should be installed before running the code:
+
 from __future__ import division
+
 import numpy as np
 import os
 import glob
