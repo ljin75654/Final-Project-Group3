@@ -172,7 +172,7 @@ model.add(Dense(num_classes, name='output'))
 model.add(Activation('softmax'))  # softmax since output is within 50 classes
 
 model.compile(loss='categorical_crossentropy', optimizer=SGD(), metrics=['accuracy'])
-
+model.save_weights('low_loss.hdf5')
 #from keras.utils import plot_model
 #plot_model(model, to_file='model.png')
 print(model.summary())
