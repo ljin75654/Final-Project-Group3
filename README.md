@@ -11,41 +11,24 @@ This program runs on GPU.
 The following packages should be installed before running the code:
 
 from __future__ import division<br/>
+
 import numpy as np<br/>
 import os<br/>
-
-import glob
-
-import time
-
-from random import *
-
-from PIL import Image
-
-from keras.utils import to_categorical
-
-from sklearn.preprocessing import LabelEncoder
-
-from sklearn.model_selection import train_test_split
-
-from keras.utils import plot_model
-
-import matplotlib.pyplot as plt
-
-import pandas as pd
-
-import matplotlib.image as mpimg
-
-from keras.models import Sequential
-
-from keras.layers import Dense, Dropout, Flatten, Lambda, ELU, Activation, BatchNormalization
-
-from keras.layers.convolutional import Convolution2D, Cropping2D, ZeroPadding2D, MaxPooling2D
-
-from keras.preprocessing.image import ImageDataGenerator
-
-from keras.optimizers import SGD, Adam, RMSprop
-
-import tensorflow as tf
-
-from keras.callbacks import ModelCheckpoint
+import glob<br/>
+import time<br/>
+from random import * <br/>
+from PIL import Image<br/>
+from keras.utils import to_categorical<br/>
+from sklearn.preprocessing import LabelEncoder<br/>
+from sklearn.model_selection import train_test_split<br/>
+from keras.utils import plot_model<br/>
+import matplotlib.pyplot as plt<br/>
+import pandas as pd<br/>
+import matplotlib.image as mpimg<br/>
+from keras.models import Sequential<br/>
+from keras.layers import Dense, Dropout, Flatten, Lambda, ELU, Activation, BatchNormalization<br/>
+from keras.layers.convolutional import Convolution2D, Cropping2D, ZeroPadding2D, MaxPooling2D<br/>
+from keras.preprocessing.image import ImageDataGenerator<br/>
+from keras.optimizers import SGD, Adam, RMSprop<br/>
+import tensorflow as tf<br/>
+from keras.callbacks import ModelCheckpoint<br/>
