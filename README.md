@@ -6,27 +6,23 @@ This project addresses an image classification problem, and further application 
 ## Requirements 
 This program runs on GPU. 
 
-## Installation
+## Group-Proposal
+The proposal covers the following questions:</br>
+What problem was selected and why it was selected?</br>
+What database/dataset was used? Was it large enough to train a deep network?</br>
+What deep network was used?</br>
+What framework was used to implement the network? Why?</br>
+What reference materials were used to obtain sufficient background on applying thechosen network to the specific problem that you selected?</br>
+How to judge the performance of the network? What metrics was used?</br>
 
-The following packages should be installed before running the code:
-from __future__ import division<br/>
-import numpy as np<br/>
-import os<br/>
-import glob<br/>
-import time<br/>
-from random import * <br/>
-from PIL import Image<br/>
-from keras.utils import to_categorical<br/>
-from sklearn.preprocessing import LabelEncoder<br/>
-from sklearn.model_selection import train_test_split<br/>
-from keras.utils import plot_model<br/>
-import matplotlib.pyplot as plt<br/>
-import pandas as pd<br/>
-import matplotlib.image as mpimg<br/>
-from keras.models import Sequential<br/>
-from keras.layers import Dense, Dropout, Flatten, Lambda, ELU, Activation, BatchNormalization<br/>
-from keras.layers.convolutional import Convolution2D, Cropping2D, ZeroPadding2D, MaxPooling2D<br/>
-from keras.preprocessing.image import ImageDataGenerator<br/>
-from keras.optimizers import SGD, Adam, RMSprop<br/>
-import tensorflow as tf<br/>
-from keras.callbacks import ModelCheckpoint<br/>
+## Final-Group-Project-Report
+Introduction</br>
+Description of the data set</br>
+Description of the deep learning network and training algorithm</br>
+Experimental setup</br>
+Results</br>
+Summary and conclusions</br>
+
+## Code
+Code folder contains 4 python files, which are corresponding to different CNN models with various convolution layers and optimizer functions. In addition, each file provides test acccurcy and loss values for eight epochs.
+
