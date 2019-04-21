@@ -23,20 +23,16 @@ from keras.preprocessing.image import ImageDataGenerator<br/>
 from keras.optimizers import SGD, Adam, RMSprop<br/>
 import tensorflow as tf<br/>
 from keras.callbacks import ModelCheckpoint<br/>
-## 3_layer_CNN_Adam.py
-
+## 3_layer_CNN_Adam.py<br/>
 3 convolution layers with Adam optimzer
 
-## 3_layer_CNN_SGD.py
-
+## 3_layer_CNN_SGD.py<br/>
 3 convolution layers with SGD optimizer
 
-## 4_layer_CNN_Adam.py
-
+## 4_layer_CNN_Adam.py<br/>
 4 convolution layers with Adam optimizer
 
-## 4_layer_CNN_SGD.py
-
+## 4_layer_CNN_SGD.py<br/>
 4 convolution layers with SGD optimizer
 
 
