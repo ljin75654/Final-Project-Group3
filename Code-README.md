@@ -1,5 +1,11 @@
 # README
 
+## Data Subset
+There are 4899 png image files in the data subset. 
+
+## forms_for_parsing 
+This dataset contains images of each handwritten sentence with the dash-separated filename format. The first field represents the test code, second the writer id, third passage id, and fourth the sentence id.
+
 ## Installation
 The following packages should be installed before running the program:
 from __future__ import division<br/>
