@@ -16,6 +16,7 @@ What reference materials were used to obtain sufficient background on applying t
 How to judge the performance of the network? What metrics was used?</br>
 
 ## Final-Group-Project-Report
+The report covers the following topics:
 Introduction</br>
 Description of the data set</br>
 Description of the deep learning network and training algorithm</br>
