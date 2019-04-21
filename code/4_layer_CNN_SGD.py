@@ -146,32 +146,28 @@ model.add(Lambda(resize_image))  # resize images to allow for easy computation
 model.add(Convolution2D(filters=32, kernel_size=(3, 3), strides=(2, 2), padding='same', name='conv1'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool1'))
-model.add(Dropout(0.25))
 
 model.add(Convolution2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv2'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool2'))
-model.add(Dropout(0.25))
 
 model.add(Convolution2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv3'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool3'))
-model.add(Dropout(0.4))
 
 model.add(Convolution2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv4'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool4'))
-model.add(Dropout(0.4))
 model.add(Flatten())
-
+model.add(Dropout(0.4))
 
 model.add(Dense(512, name='dense1'))
 model.add(Activation('relu'))
-model.add(Dropout(0.2))
+model.add(Dropout(0.4))
 
 model.add(Dense(256, name='dense2'))
 model.add(Activation('relu'))
-model.add(Dropout(0.2))
+model.add(Dropout(0.5))
 
 model.add(Dense(num_classes, name='output'))
 model.add(Activation('softmax'))  # softmax since output is within 50 classes
