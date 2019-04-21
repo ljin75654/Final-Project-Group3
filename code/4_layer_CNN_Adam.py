@@ -187,7 +187,7 @@ nb_val_samples = 800
 
 
 from keras.callbacks import ModelCheckpoint
-filepath = "checkpoint2/check-{epoch:02d}-{val_loss:.4f}.hdf5"
+filepath = "check-{epoch:02d}-{val_loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath=filepath, verbose=1, save_best_only=False)
 callbacks_list = [checkpoint]
 
