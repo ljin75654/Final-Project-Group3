@@ -10,11 +10,9 @@ This program runs on GPU.
 
 The following packages should be installed before running the code:
 
-from __future__ import division
-
-import numpy as np
-
-import os
+from __future__ import division<br/>
+import numpy as np<br/>
+import os<br/>
 
 import glob
 
