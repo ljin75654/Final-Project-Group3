@@ -2,9 +2,12 @@
 
 ## Data Subset
 Download data subset from https://www.kaggle.com/tejasreddy/offline-handwriting-recognition-cnn/data.</br> Drag the this folder into code folder.</br>
-There are 4899 png image files in the data subset.
 
-## forms_for_parsing.txt 
+
+The dataset utilized for this project is the IAM Handwriting Dataset taken from the Kaggle website. There are 4899 png image files in the data subset.Each image file is in png format and of different pixel size.The database contains 1539 (unique case) pages of scanned text sentences written by 657 writers. The data was grouped by writer, with each writer given a set of sentences to transcribe from different passages. The sentences were taken separately and preprocessed. We only used 50 writer’s handwritten images in our project.
+
+
+## forms_for_parsing 
 This dataset contains images of each handwritten sentence with the dash-separated filename format. The first field represents the test code, second the writer id, third passage id, and fourth the sentence id.
 
 ## Installation
