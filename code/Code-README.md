@@ -1,7 +1,8 @@
 # README
 
 ## Data Subset
-There are 4899 png image files in the data subset. 
+Download data subset from https://www.kaggle.com/tejasreddy/offline-handwriting-recognition-cnn/data.</br> Drag the this folder into code folder.</br>
+There are 4899 png image files in the data subset.
 
 ## forms_for_parsing 
 This dataset contains images of each handwritten sentence with the dash-separated filename format. The first field represents the test code, second the writer id, third passage id, and fourth the sentence id.
