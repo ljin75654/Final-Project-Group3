@@ -9,7 +9,6 @@ from PIL import Image
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
 import pandas as pd
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Lambda, Activation
@@ -148,13 +147,17 @@ model.add(Convolution2D(filters=32, kernel_size=(3, 3), strides=(2, 2), padding=
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool1'))
 
-model.add(Convolution2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv2'))
+model.add(Convolution2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv2'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool2'))
 
-model.add(Convolution2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv3'))
+model.add(Convolution2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv3'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool3'))
+
+model.add(Convolution2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', name='conv4'))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), name='pool4'))
 model.add(Flatten())
 model.add(Dropout(0.4))
 
@@ -173,6 +176,7 @@ model.compile(loss='categorical_crossentropy', optimizer=SGD(), metrics=['accura
 model.save_weights('low_loss.hdf5')
 #from keras.utils import plot_model
 #plot_model(model, to_file='model.png')
+
 print(model.summary())
 
 #------------------------------------------------------------------------------------------------
@@ -183,7 +187,7 @@ nb_val_samples = 800
 
 
 from keras.callbacks import ModelCheckpoint
-filepath = "checkpoint2/check-{epoch:02d}-{val_loss:.4f}.hdf5"
+filepath = "check-{epoch:02d}-{val_loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath=filepath, verbose=1, save_best_only=False)
 callbacks_list = [checkpoint]
 
@@ -196,9 +200,9 @@ history_object = model.fit_generator(train_generator, samples_per_epoch=samples_
 #------------------------------------------------------------------------------------------------
 #Print accuracy
 model.load_weights('low_loss.hdf5')
-#train_scores = model.evaluate_generator(train_generator, 800)
+# train_scores = model.evaluate_generator(train_generator, 800)
 test_scores = model.evaluate_generator(test_generator, 800)
-#val_scores = model.evaluate_generator(validation_generator, 800)
+# val_scores = model.evaluate_generator(validation_generator, 800)
 print("Accuracy = ", test_scores[1])
 
 # #Plot training and validation accuracy
