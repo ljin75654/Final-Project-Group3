@@ -201,6 +201,7 @@ test_scores = model.evaluate_generator(test_generator, 800)
 # val_scores = model.evaluate_generator(validation_generator, 800)
 print("Accuracy = ", test_scores[1])
 
+# Plot training and validation accuracy and loss
 plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, nb_epoch), history_object.history["acc"], label="train_acc")
