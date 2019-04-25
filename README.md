@@ -25,5 +25,6 @@ Results</br>
 Summary and conclusions</br>
 
 ## Code
-Code folder contains 4 python files, which are corresponding to different CNN models with various convolution layers and optimizer functions. In addition, each file provides test acccurcy and loss values for eight epochs.
+Code folder contains 5 python files. 4 files correspond to different CNN models with various convolution layers and optimizer functions. In addition, each file provides test acccurcy and loss values for eight epochs.
+The other python file plots the filters for each convolution layer.
 
